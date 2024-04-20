@@ -48,7 +48,7 @@ We demonstrate that attention significantly improves model accuracies.
 
 # Limitations
 
- * We used 2D CNNs even though the input data was 3D video sequence; This is because we had no enough resource to train our model over the large video dataset. 
+ * We used 2D CNNs even though the input data was 3D video; This is because we had no enough resource to train our model over the large video dataset. 
  * However, we show attention-mechanism significantly imporves the performance of gesture recognition models.
 
 # Code Usage
@@ -57,7 +57,7 @@ We demonstrate that attention significantly improves model accuracies.
  * Run main_non_attention.py for "Baseline".
 
 # Acknowledgement
- * We created this code with [Dr. Chen](https://scholar.google.com/citations?user=0ZMklOIAAAAJ&hl=en) for "CSE 5095 Advances in Deep Learning" Class Project in Dec. 2019.
+ * I and [Dr. Chen](https://scholar.google.com/citations?user=0ZMklOIAAAAJ&hl=en) created this code for "CSE 5095 Advances in Deep Learning" Class Project in Dec. 2019.
    * Class instructor is [Dr. Ding](https://scholar.google.com/citations?user=7hR0r_EAAAAJ&hl=en) -- Many thanks to his great teaching for the class!
  * We referred opts.py and some codes from [3D-Resnets-Pytorch](https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master) to build ResNet modules for the video frames. 
  * If you have any questions, please feel free to contact me at husky.jihye.moon@gmail.com!
