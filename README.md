@@ -31,7 +31,6 @@ In Eq. (2), the Attention weight A_t is added to BiLSTM's weights. Then we obtai
 
  * The hyperparameters for the Bi-LSTM were selected as follows: an embedding size of 128, one layer, and a hidden layer size of 256. All models were trained using a batch size of 64. The input size of image was 112x112x3. 
 
-
 # Results 
  
 **Table 1. Accuracy scores for 28 guesture classifications (At Epoch 50)**
@@ -52,9 +51,14 @@ We demonstrate that attention significantly improves model accuracies.
  * We used 2D CNNs even though the input data was 3D video sequence; This is because we had no enough resource to train our model over the large video dataset. 
  * However, we show attention-mechanism significantly imporves the performance of gesture recognition models.
 
+# Code Usage
+ * Edit opts.py per your data.
+ * Run main_normal_attention.py for "AttBiLSTM".
+ * Run main_non_attention.py for "Baseline".
+
 # Acknowledgement
  * We created this code with [Dr. Chen](https://scholar.google.com/citations?user=0ZMklOIAAAAJ&hl=en) for "CSE 5095 Advances in Deep Learning" Class Project in Dec. 2019.
    * Class instructor is [Dr. Ding](https://scholar.google.com/citations?user=7hR0r_EAAAAJ&hl=en) -- Many thanks to his great teaching for the class!
  * We refered some codes from [3D-Resnets-Pytorch](https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master) to build ResNet modules for the video frames. 
-
+ * If you have any questions, please feel free to contact me at husky.jihye.moon@gmail.com!
 
