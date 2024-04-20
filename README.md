@@ -59,6 +59,6 @@ We demonstrate that attention significantly improves model accuracies.
 # Acknowledgement
  * We created this code with [Dr. Chen](https://scholar.google.com/citations?user=0ZMklOIAAAAJ&hl=en) for "CSE 5095 Advances in Deep Learning" Class Project in Dec. 2019.
    * Class instructor is [Dr. Ding](https://scholar.google.com/citations?user=7hR0r_EAAAAJ&hl=en) -- Many thanks to his great teaching for the class!
- * We refered some codes from [3D-Resnets-Pytorch](https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master) to build ResNet modules for the video frames. 
+ * We referred opts.py and some codes from [3D-Resnets-Pytorch](https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master) to build ResNet modules for the video frames. 
  * If you have any questions, please feel free to contact me at husky.jihye.moon@gmail.com!
 
