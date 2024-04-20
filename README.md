@@ -2,8 +2,8 @@
 Hand gestures are one of the most natural ways that humans use to express their thoughts. They have potential applications in interfaces for Virtual Reality and Augmented Reality, as well as in sign language recognition. With the developments and successful applications of deep learning models in image analysis, such as image classification and object detection, it has become possible to recognize hand gestures using deep learning models. Dynamic hand gesture recognition, as a branch of the video classification problem, is challenging in many ways.
 
 # Motivation
-In Fall 2019, we investigated how we could optimize gesture recognition methods using attention mechanisms. 
-We hypothesized that **attention mechanisms optimize the training of deep neural networks for continuous gesture recognition from video.**
+ * In Fall 2019, we investigated how we could optimize gesture recognition methods using attention mechanisms. 
+ * We hypothesized that **attention mechanisms optimize the training of deep neural networks for continuous gesture recognition from video.**
 
 # Proposed Framework
 To validate this hypothesis, we have designed a framework consisting of 2D-CNN and BiLSTM with Attention (Figs. 1-2).
@@ -25,19 +25,12 @@ In Eq. (1), W_t is the output vector set of BiLSTM. X_t is the embedding feature
 In Eq. (2), the Attention weight A_t is added to BiLSTM's weights. Then we obtain X'_t tha fed to the softmax layer.
 
 # Dataset and model training
-We conducted this experiment using the 20DB-Jester Dataset V1, which consists of 27 classes of gestures. A total of 118,562 videos were used for the training set, while 14,787 videos were allocated for the validation set.
+ * We conducted this experiment using the 20DB-Jester Dataset V1, which consists of 27 classes of gestures. A total of 118,562 videos were used for the training set, while 14,787 videos were allocated for the validation set.
 
-We trained two models: Baseline (2D-CNN + BiLSTM without attention) and our AttBiLSTM (2D-CNN + BiLSTM with attention). As a 2D-CNN model, we selected the pre-trained 2D-ResNet18 model.
+ * We trained two models: Baseline (2D-CNN + BiLSTM without attention) and our AttBiLSTM (2D-CNN + BiLSTM with attention). As a 2D-CNN model, we selected the pre-trained 2D-ResNet18 model.
 
-The hyperparameters for the Bi-LSTM were selected as follows: an embedding size of 128, one layer, and a hidden layer size of 256. All models were trained using a batch size of 64.
-The input size of image was 112x112x3. 
+ * The hyperparameters for the Bi-LSTM were selected as follows: an embedding size of 128, one layer, and a hidden layer size of 256. All models were trained using a batch size of 64. The input size of image was 112x112x3. 
 
-
-
-
-
-
-<img src="https://github.com/JihyeMooon/Gesture_Recognition_3D_AttentionBiLSTM/assets/112595759/d167d96e-be61-4cd2-b0f0-f3d710c35a2f" width="50%" height="50%"> 
 
 # Results 
  
@@ -51,16 +44,17 @@ The input size of image was 112x112x3.
 
 Fig. 3. Training and validation accuracies during 50 epochs 
 
-We demonstrate that attention significantly improves model accuracies. By simply adding the attention equation to the model, we show that model training was greatly optimized, which provides much better accuracies for the gesture recognition!
+We demonstrate that attention significantly improves model accuracies. 
+**By simply adding the attention equation to the model, we show that model training was greatly optimized, which provides much better accuracies for the gesture recognition even with the simple structure!**
 
 # Limitations
 
-We used 2D CNNs even though the input data was 3D video sequence; This is because we had no enough resource to train our model over the large video dataset. 
-However, we show attention-mechanism significantly imporves the performance of gesture recognition models.
+ * We used 2D CNNs even though the input data was 3D video sequence; This is because we had no enough resource to train our model over the large video dataset. 
+ * However, we show attention-mechanism significantly imporves the performance of gesture recognition models.
 
 # Acknowledgement
-We created this code with [Dr. Chen](https://scholar.google.com/citations?user=0ZMklOIAAAAJ&hl=en) for "CSE 5095 Advances in Deep Learning" Class Project in Dec. 2019.
-Class instructor is [Dr. Ding](https://scholar.google.com/citations?user=7hR0r_EAAAAJ&hl=en).
-We refered some codes from [3D-Resnets-Pytorch](https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master) to build ResNet modules for the video frames. 
+ * We created this code with [Dr. Chen](https://scholar.google.com/citations?user=0ZMklOIAAAAJ&hl=en) for "CSE 5095 Advances in Deep Learning" Class Project in Dec. 2019.
+   * Class instructor is [Dr. Ding](https://scholar.google.com/citations?user=7hR0r_EAAAAJ&hl=en) -- Many thanks to his great teaching for the class!
+ * We refered some codes from [3D-Resnets-Pytorch](https://github.com/kenshohara/3D-ResNets-PyTorch/tree/master) to build ResNet modules for the video frames. 
 
 
