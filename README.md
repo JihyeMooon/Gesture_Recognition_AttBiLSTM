@@ -46,7 +46,7 @@ Fig. 3. Training and validation accuracies during 50 epochs
 We demonstrate that attention significantly improves model accuracies. 
 **By simply adding the attention equation to the model, we show that model training was greatly optimized, which provides much better accuracies for the gesture recognition even with the simple structure!**
 
-# Limitations
+# Limitations & Insights
 
  * We used 2D CNNs even though the input data was 3D video; This is because we had no enough resource to train our model over the large video dataset. 
  * However, we show attention-mechanism significantly imporves the performance of gesture recognition models.
